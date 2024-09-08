@@ -1,8 +1,9 @@
-import React from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
+import useTitle from "../hooks/useTitle";
 
 const DetailPage = () => {
+  useTitle("상세 페이지");
   const { id } = useParams();
   const navigate = useNavigate();
   const todo = useSelector((state) =>

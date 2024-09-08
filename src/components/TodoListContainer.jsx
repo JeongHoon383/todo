@@ -9,7 +9,6 @@ const TodoListContainer = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // handlers
   const onDeleteHandler = (id) => {
     dispatch(deleteTodo({ id }));
   };
@@ -20,7 +19,6 @@ const TodoListContainer = () => {
     navigate(`/${id}`);
   };
 
-  // todoList, doneList
   const todoList = [];
   const doneList = [];
   todos.forEach((todo) => {
